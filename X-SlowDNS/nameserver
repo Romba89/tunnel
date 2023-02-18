@@ -5,7 +5,7 @@ ns_domain_cloudflare() {
 	DAOMIN=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c6)
 	SUB_DOMAIN=$testslow."sshvpn-vpsmax.tk"
-	NS_DOMAIN=dns.${SUB_DOMAIN}
+	NS_DOMAIN=dns.${testslow.sshvpn-vpsmax.tk}
 	CF_ID=vpsplus90@gmail.com
         CF_KEY=f3354cf77f28314caae880b951ce0abc562f5
 	set -euo pipefail
