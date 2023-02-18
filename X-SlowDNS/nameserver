@@ -4,7 +4,7 @@ ns_domain_cloudflare() {
 	DOMAIN="sshvpn-vpsmax.tk"
 	DAOMIN=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c6)
-	SUB_DOMAIN=$test-slow."sshvpn-vpsmax.tk"
+	SUB_DOMAIN=$testslow."sshvpn-vpsmax.tk"
 	NS_DOMAIN=dns.${SUB_DOMAIN}
 	CF_ID=vpsplus90@gmail.com
         CF_KEY=f3354cf77f28314caae880b951ce0abc562f5
